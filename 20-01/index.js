@@ -84,29 +84,39 @@ console.log(stringToArray); // it would split each character in the string withi
 
 //________________________________________________________________________________________________________________________________
 
-// EXERCISE:
+//=============EXERCISE200120=========================================================================
 
 // 1. Declare a variable named “euroCities” and assign an array to the variable e.g. [“Paris”, “London”, “Valletta”, “Prague”, “Rome”].
 
 let euroCities = ["Paris", "London", "Valletta", "Prague", "Rome"];
 
+//-----------------------------------------------------------------------------------------------------
+
 // 1b. Declare another variable and assign the second item of the array as a value.
 
 let euroCity2 = euroCities[1];
+
+//-----------------------------------------------------------------------------------------------------
 
 // 2. Change the first item in the array to “Berlin”.
 
 euroCities[0] = "Berlin";
 console.log(euroCities);
 
+//-----------------------------------------------------------------------------------------------------
+
 // 3. Print the length of the array “euroCities”.
 
 console.log(euroCities.length);
+
+//-----------------------------------------------------------------------------------------------------
 
 // 4. Remove the last item of the array “euroCities”.
 
 euroCities.pop();
 console.log(euroCities);
+
+//-----------------------------------------------------------------------------------------------------
 
 // 5. Use an array method to add “Budapest” to the euroCities array.
 
@@ -115,9 +125,13 @@ let euroCity = "Budapest";
 euroCities.push(euroCity);
 console.log(euroCities);
 
+//-----------------------------------------------------------------------------------------------------
+
 // 6. Create another variable named asianCities and assign an array of at least 5 cities to the variable.
 
 let asianCities = ["Tokio", "Shanghai", "Hanoi", "New Dehli", "Bangkok"];
+
+//-----------------------------------------------------------------------------------------------------
 
 // 7. Use an array method to select items 2-4 from the array of asianCities and store this in another variable.
 
@@ -125,6 +139,8 @@ console.log(asianCities.slice(1, 4)); // slice and splice work same
 
 let newArray = asianCities.splice(1, 3); // always create new variable and assign the value
 console.log(newArray);
+
+//-----------------------------------------------------------------------------------------------------
 
 //___________________________________________________________________________________________________________________
 

@@ -125,7 +125,8 @@ for (let i = 0; i < str2.length; i++) {
   console.log(`${str2[i]}`);
 }
 
-// EXERCISES
+//==========================EXERCISES===============================================================
+
 // 1.Addition. Write a program to add up the numbers 1 to 20.
 
 for (let a = 1; a <= 20; a++) {
@@ -138,6 +139,8 @@ for (let i = 1; i <= 20; i++) {
   counterSum += i; // will add the previous numbers to the current number
 }
 console.log(counterSum);
+
+//---------------------------------------------------------------------------------------------------
 
 // 2.There are i bottles of beer on the wall. Write a program that will output,
 // “There is one bottle of beer on the wall.” “There are two bottles of beer on the wall” up until there are five bottles.
@@ -161,6 +164,8 @@ for (let i = 1; i <= 5; i++) {
   }
 }
 
+//-------------------------------------------------------------------------------------------------------------
+
 // 3.The odd/even reporter. Write a program that will iterate from 0 to 20.
 // For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. “2 is even”).
 
@@ -175,6 +180,8 @@ for (let a = 0; a <= 20; a++) {
 
 // trick string.repeat(x) --> x = how many times
 // for (let i = 1; i <= 10; i++);
+
+//-------------------------------------------------------------------------------------------------------------
 
 // EXCERCISE
 

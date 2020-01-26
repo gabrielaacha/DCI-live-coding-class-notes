@@ -162,6 +162,8 @@ console.log(isNaN(NotaNumber5) ? "true" : "false");
 // Math.random // we will constantly use it in react
 console.log(Math.floor(Math.random() * 10) + 1); // you multiply in order to move the comma and get some control // Math.floor is used to turn the number integer
 
+//___________________________________________________________________________________________________________________________________________________
+
 // EXERCISE
 // 1. Minimum and maximum
 // a. Lowest Number

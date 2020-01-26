@@ -76,6 +76,8 @@ if (1 < 4 || (1 < 55 && false)) {
   console.log("yeah its true");
 }
 
+//_______________________________________________________________________________________________________________________________________________________
+
 //EXERCISES
 // A math student scored 75, 70, 85, 90, 100 on the first five tests he took . After he took his sixth math test, the average is now 85. What did he score on the sixth test?
 const mathStudent = 75 + 70 + 85 + 90 + 100;

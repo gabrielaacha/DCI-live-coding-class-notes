@@ -67,7 +67,7 @@ let result = strInt + strInt2;
 let newNum = parseInt(strInt, 16); // converts the string into a number together with the other lines, and it will select the number system, decimal, etc...
 console.log(newNum);
 
-
+//==========================Exercise================================================================================================
 //1. Create two variables. One variable should contain a string value and the other should contain a number. Concatenate the string and the number.
 
 // my answer
@@ -121,6 +121,8 @@ let float1 = "10.5";
 let reallFloat1 = parseInt(float1);
 console.log(reallFloat1);
 
+//=================================================================================================================================
+
 //Modulo %
 let lastNum = 4 % 2;
 console.log(lastNum);
@@ -152,6 +154,8 @@ console.log(Math.max(x, z, q, s));
 
 // Math.min()
 console.log(Math.min(4, 5, 88, 0.2, 200, 4));
+
+//==========================Exercise================================================================================================
 
 // exercise A: Create a variable with the value of “123”. Convert it to a number.
 let varX = "123";
