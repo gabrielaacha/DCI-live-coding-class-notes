@@ -53,7 +53,7 @@ console.log(userSalNet("pluto", 7000, "ff"));
 
 function display(random) {
   // let random = 0; // NEVER DO THIS // this is mistake, never declare the parameter as a variable // you are not meant to reassign, only modify, multiply, etc..
-  let newArr = random.toLowerCase().split(""); // this is correct, you are just modifying not assigning new value
+  let newArr = random.toLowerCase().split(" "); // this is correct, you are just modifying not assigning new value
   console.log(newArr);
   return newArr;
   global += 2;

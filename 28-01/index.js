@@ -13,18 +13,30 @@ str(str2);
 
 //----------------------------------------------------------------------------------------------------------------------------
 
-// Create a function that calculates the user age e.g. 2000 -> 20.
+// Create a function that calculates the user age e.g. 2000 -> 20. (Date().getFullYear);
 
-function userAge(userNum2) {
-  let currentYear = 2020;
-  let resAge = 0;
-  let userNum2 = currentYear - userInput;
-  userAr.push(resAge);
-  return resAge;
+// function userAge(userNum2) {
+//   let currentYear = 2020;
+//   let resAge = 0;
+//   let userNum2 = currentYear - userInput;
+//   userAr.push(resAge);
+//   return resAge;
+// }
+
+// const userInput = 2000;
+// console.log(userAge(userNum2));
+
+//------------------Hadis solution--------------------------------------------------------------------------------------------
+
+function age(num) {
+  let year = new Date().getFullYear();
+  let userAge = year - num;
+  return num < year && num > 1900
+    ? `${userAge} years old`
+    : `Please enter a valid year`;
 }
-
-const userInput = 2000;
-console.log(userAge(userNum2));
+console.log(age(1940));
+console.log(age(2200));
 
 //----------------------------------------------------------------------------------------------------------------------------
 
@@ -147,41 +159,45 @@ console.log(arrMonth);
 
 //----------------------------------------------------------------------------------------------------------------------------
 
-// const monthNames2 = [
-//   "January",
-//   "February",
-//   "March",
-//   "April",
-//   "May",
-//   "June",
-//   "July",
-//   "August",
-//   "September",
-//   "October",
-//   "November",
-//   "December"
-// ];
+const monthNames2 = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
 
-// function monthSeason (userText2) {
-//     let result = [];
-//     for (let i = 0; i < monthNames2.length; i++) {
-//       if (userText2[i][0] || userText2[i][1] || userText2[i][2]) {
-//         result.push(monthNames2[i] + ", Winter");
-//     } else if (userText2[i][3] || userText2[i][4] || userText2[i][5]) {
-//         result.push(monthNames2[i] + ", Spring");
-//       } else if (userText2[i][6] || userText2[i][7] || userText2[i][8]) {
-//         result.push(monthNames2[i] + ", Summer");
-//       } else if (userText2[i][9] || userText2[i][10] || userText2[i][11]) {
-//         result.push(monthNames2[i] + ", Autumn");
-//       } else {
-//         result.push("this is not a month");
-//       }
+function monthSeason(userText2) {
+  let result = [];
+  let winter = monthNames2[i] + ", Winter";
+  let summer = monthNames2[i] + ", Summer";
+  let spring = monthNames2[i] + ", Spring";
+  let autumn = monthNames2[i] + ", Autumn";
+  for (let i = 0; i < monthNames2.length; i++) {
+    if (userText2[i][0] || userText2[i][1] || userText2[i][2]) {
+      winter.push(result);
+    } else if (userText2[i][3] || userText2[i][4] || userText2[i][5]) {
+      result.push(monthNames2[i] + ", Spring");
+    } else if (userText2[i][6] || userText2[i][7] || userText2[i][8]) {
+      result.push(monthNames2[i] + ", Summer");
+    } else if (userText2[i][9] || userText2[i][10] || userText2[i][11]) {
+      result.push(monthNames2[i] + ", Autumn");
+    } else {
+      result.push("this is not a month");
+    }
+  }
 
-//     return result;
-//   }
+  return result;
+}
 
-//   const input = "February";
-//   console.log(monthSeason(input));
+console.log(monthSeason("February"));
 
 //----------------------------------------------------------------------------------------------------------------------------
 
@@ -263,21 +279,21 @@ function studentDeg(array) {
 // * print all the user input adding the greeting part and more text turning that input into a readable text.
 // * If one of his activities was dance ￼or party print "you are cool".
 
-function hobbies(hobAr) {
-  let userData = ["name", "age", "address", ..."hobbies"];
-  // let result = 0;
-  for (i = 0; i < hobAr.length; i++) {
-    userData.map(hobAr);
-    console.log(hobAr);
-  }
-}
+// function hobbies(hobAr) {
+//   let userData = ["name", "age", "address", ..."hobbies"];
+//   // let result = 0;
+//   for (i = 0; i < hobAr.length; i++) {
+//     userData.map(hobAr);
+//     console.log(hobAr);
+//   }
+// }
 
-let userInfo = ["gabriela", "34", "selchower", "swimming", "yoga", "read"];
-hobbies(userInfo);
+// let userInfo = ["gabriela", "34", "selchower", "swimming", "yoga", "read"];
+// hobbies(userInfo);
 
-if (activities.includes(dance || party)) {
-  console.log("you are cool");
-}
+// if (activities.includes(dance || party)) {
+//   console.log("you are cool");
+// }
 
 //=========================more exercises===========================================================================
 
