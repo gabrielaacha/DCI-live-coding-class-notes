@@ -299,3 +299,8 @@ function countLetters(str) {
 console.log(countLetters("tuesday"));
 
 //...................................................
+
+//==================resources=========================================================================
+// https://www.youtube.com/watch?v=Gp5nnerXETg
+// https://www.youtube.com/watch?v=-P04pE6zRNE
+// https://www.youtube.com/watch?v=4uVwGw317QM
