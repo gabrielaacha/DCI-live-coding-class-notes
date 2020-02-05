@@ -123,6 +123,24 @@ console.log(fun({ name: "GG", age: 33 }, { lastNAme: "Allin" }));
 
 //..........................
 
+// const month = [1,2,3,4,5,6,7,8,9,10,11,12];
+// const day = [1,2,3,4,5,6,7,8,9,0,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
+const starSigns = {
+    signs: [{0: acuarius, from: 0120}, 
+            {1: piscis, from: 0219},
+            {2: aries, from: 0321}, 
+            {3: taurus, from: 0420}, 
+            {4: gemini, from: 0521}, 
+            {5: cancer, from: 0622}, 
+            {6: leo, from: 0723}, 
+            {7: virgo, from:0823}, 
+            {8: libra, from: 0923}, 
+            {9: scorpio, from: 1024}, 
+            {10: sagittarius, from: 1122}, 
+            {11: capricorn, from:1222} 
+           ];     
+};
+
 function zodiac(name, day, month, year) {
   const result = {
     userName: name,
@@ -130,98 +148,103 @@ function zodiac(name, day, month, year) {
     birthMonth: month,
     birthYear: year
   }; // i am assigning the parameter to the object, it is coming from outside
+}
 
-  const starsign = {
-    0: aries,
-    1: taurus,
-    2: gemini,
-    3: cancer,
-    4: leo,
-    5: virgo,
-    6: locationbar,
-    7: scorpio,
-    8: sagitarius,
-    9: capricorn,
-    10: acuarius,
-    11: piscis
-  };
+// if I wanna access both of them : object.entries()
+for (let [key, value] of Object.entries(starSign)) {
+    // now we have for of (instead of for in)
+    console.log(`${key} : ${value}`);
+  }
+
+// for (let prop in signs) {
+//     const whatIsYourStarSign = {
+
+//         starSigns = () => {
+//         if ((month == 2 && date >= 21 && date <=31) || (month === 3 && date >= 1 && date <= 19)){
+//                 return Object.values(signs[0]); // aries
+// }
+  
+//         starSign = () => {
+//             if ((month == 3 && date >= 20 && date <=30) || (month === 4 && date >= 1 && date <= 20)){
+//                 return Object.values(signs[1]); // taurus
+// }
+
+//         starSign = () => {
+//             if ((month == 4 && date >= 21 && date <=31) || (month === 5 && date >= 1 && date <= 21)){
+//                 return Object.values(signs[2]); // gemini
+// }
+
+//         starSign = () => {
+//             if ((month == 5 && date >= 22 && date <=30) || (month === 6 && date >= 1 && date <= 22)){
+//                 return Object.values(signs[3]); // cancer
+// }
+
+//         starSign = () => {
+//             if ((month == 6 && date >= 22 && date <=31) || (month === 7 && date >= 1 && date <= 22)){
+//                 return Object.values(signs[4]); // leo 
+// }
+
+//         starSign = () => {
+//             if ((month == 7 && date >= 23 && date <=31) || (month === 8 && date >= 1 && date <= 22)){
+//                 return Object.values(signs[5]); // virgo
+// }
+
+//         starSign = () => {
+//             if ((month == 8 && date >= 23 && date <=30) || (month === 9 && date >= 1 && date <= 23)){
+//                 return Object.values(signs[6]); // libra
+// }
+
+//         starSign = () => {
+//             if ((month == 9 && date >= 24 && date <=31) || (month === 10 && date >= 1 && date <= 21)){
+//                 return Object.values(signs[7]); // scorpio
+// }
+
+//         starSign = () => {
+//             if ((month == 10 && date >= 22 && date <=30) || (month === 11 && date >= 1 && date <= 21)){
+//                 return Object.values(signs[8]); // sagittarius
+// }
+
+//         starSign = () => {
+//             if ((month == 11 && date >= 22 && date <=31) || (month === 0 && date >= 1 && date <= 19)){
+//                 return Object.values(signs[9]); // capricorn
+// }
+
+//         starSign = () => {
+//             if ((month == 0 && date >= 20 && date <=30) || (month === 1 && date >= 1 && date <= 18)){
+//                 return Object.values(signs[10]); // aquarius
+// }
+
+//         starSign = () => {
+//             if ((month == 1 && date >= 19 && date <=28) || (month === 2 && date >= 1 && date <= 20)){
+//                 return Object.values(signs[11]); // piscis
+// }
+        }
+
+console.log(`signs.${prop} : ${signs[prop]}`);
+
+}
+
 
   console.log(
-    `hadi was born on the ${day}.${month}.${year} and his starsign is ${starsign}`
+    `hadi was born on the ${day}.${month}.${year} and his star sign is ${starSign}`
   );
   return result;
 }
+let result = 
 
 zodiac("Hadi", 01, "09", "1989");
 
-// Aries Mar. 21 - April 19 (month == 2 && )
-// Taurus April 20 - May 20
-// Gemini May 21 - June 21
-// Cancer June 22 - July 22
-// Leo July 23 - Aug. 22
-// Virgo Aug. 23 - Sept. 22
-// Libra Sept. 23 - Oct. 23
-// Scorpio Oct. 24 - Nov. 21
-// Sagittarius Nov. 22 - Dec. 21
-// Capricorn Dec. 22 - Jan. 19
-// Aquarius Jan. 20 - Feb. 18
-// Pisces Feb. 19 - Mar. 20
+// Aries Mar. 21 - April 19 (month == 2 && date >= 21 && date <=31) || (month === 3 && date >= 1 && date <= 19)
+// Taurus April 20 - May 20 (month == 3 && date >= 20 && date <=30) || (month === 4 && date >= 1 && date <= 20)
+// Gemini May 21 - June 21 (month == 4 && date >= 21 && date <=31) || (month === 5 && date >= 1 && date <= 21)
+// Cancer June 22 - July 22 (month == 5 && date >= 22 && date <=30) || (month === 6 && date >= 1 && date <= 22)
+// Leo July 23 - Aug. 22 (month == 6 && date >= 22 && date <=31) || (month === 7 && date >= 1 && date <= 22)
+// Virgo Aug. 23 - Sept. 22 (month == 7 && date >= 23 && date <=31) || (month === 8 && date >= 1 && date <= 22)
+// Libra Sept. 23 - Oct. 23 (month == 8 && date >= 23 && date <=30) || (month === 9 && date >= 1 && date <= 23)
+// Scorpio Oct. 24 - Nov. 21 (month == 9 && date >= 24 && date <=31) || (month === 10 && date >= 1 && date <= 21)
+// Sagittarius Nov. 22 - Dec. 21 (month == 10 && date >= 22 && date <=30) || (month === 11 && date >= 1 && date <= 21)
+// Capricorn Dec. 22 - Jan. 19 (month == 11 && date >= 22 && date <=31) || (month === 0 && date >= 1 && date <= 19)
+// Aquarius Jan. 20 - Feb. 18 (month == 0 && date >= 20 && date <=30) || (month === 1 && date >= 1 && date <= 18)
+// Pisces Feb. 19 - Mar. 20 (month == 1 && date >= 19 && date <=28) || (month === 2 && date >= 1 && date <= 20)
 
 //............................................................
-
-function monthCheck(string) {
-  let months = [
-    "december",
-    "january",
-    "february",
-    "march",
-    "april",
-    "may",
-    "jun",
-    "july",
-    "august",
-    "september",
-    "october",
-    "november"
-  ];
-  let seasons = ["Winter", "Spring", "Summer", "Autumn"];
-  let strToArray = string.toLowerCase().split(" ");
-  let result = "";
-  let counter = 0;
-  let winter = ["december", "january", "february"];
-  let spring = ["march", "april", "may"];
-  let summer = ["jun", "july", "august"];
-  let autumn = ["september", "october", "november"];
-  const currentSeason = monthToLook => {
-    let seasonName = "";
-    if (winter.includes(monthToLook)) {
-      seasonName = seasons[0];
-    } else if (spring.includes(monthToLook)) {
-      seasonName = seasons[1];
-    } else if (summer.includes(monthToLook)) {
-      seasonName = seasons[2];
-    } else if (autumn.includes(monthToLook)) {
-      seasonName = seasons[3];
-    } else {
-      seasonName = "Sorry something went wong";
-    }
-    return seasonName;
-  };
-  //console.log(months);
-  for (let i = 0; i < strToArray.length; i++) {
-    if (months.includes(strToArray[i])) {
-      let currentWord = strToArray[i];
-      result += `You have entered ${currentWord}, which is in
-             ${currentSeason(currentWord)}. `;
-      counter++;
-    }
-  }
-  if (counter == 0) {
-    result = `Sorry, I didn't find any months in your text.`;
-  }
-  return result;
-}
-console.log("monthCheck");
-
-console.log(monthCheck("hi is jun"));
-console.log(monthCheck("Hi hi is"));
