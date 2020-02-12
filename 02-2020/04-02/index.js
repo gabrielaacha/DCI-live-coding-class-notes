@@ -20,6 +20,7 @@ let aliAdd = "xxx str";
 let aliAge = 22;
 let aliLastName = "something";
 // we do this to look for storage keeping related data together
+
 //........const <namespace> = { <key> : <value 1>, <key2>: <value 2>,...} // assigning.....................................
 const object = {
   color: "red",
@@ -27,6 +28,7 @@ const object = {
   year: 1990,
   arr: [1, 2, 3, 4, 5, 6, 7]
 }; // key column value data
+
 //....accessing properties with [bracket notation].........................................................................
 const car = {};
 console.log(car);
@@ -35,7 +37,8 @@ console.log(car);
 car["year"] = 2020;
 console.log(car);
 //..................
-//Accessing properties with [dot notation]
+
+//.....Accessing properties with [dot notation].............................................................................
 car.age = 22; // there is no difference between bracket notation and dot notation
 car.age = 44; // this will overwrite the previous age
 console.log(car); // expected outcome:
@@ -45,6 +48,7 @@ console.log(car); // expected outcome:
 console.log(car.name); // this will come up just with the value
 console.log(car["name"]); // this will give the same answer as above // up to each one which ine to use
 // when we assign new stuff go for the bracket situation
+
 //..................creating new object:
 const save = new Object();
 const arr1 = new Array();
@@ -52,8 +56,9 @@ console.log(save);
 // expected outcome: empty object
 console.log(car.name);
 console.log(car);
+
 //...................for.............................................................................................
-// we have fofr for objects but it looks a bit different than what we saw so far
+// we have fof for objects but it looks a bit different than what we saw so far
 for (let prop in car) {
   // prop for properties, we can name it as we want
   console.log(`car.${prop} : ${car[prop]}`);
@@ -72,6 +77,7 @@ const person = {
     return 2020 - person.birthYear;
   }
 };
+
 //................object.keys.......................................................................................
 console.log(Object.keys(person)); // expected outcome : [ 'name', 'age', 'birthYear' ]
 //..................
@@ -83,6 +89,7 @@ for (let [key, value] of Object.entries(person)) {
   // now we have for of (instead of for in)
   console.log(`${key} : ${value}`);
 }
+
 //.................. methods.........................................................................................
 // when the property is a function you call it methods
 person.print(); // this is the function call for the previous function // print: function() {}
