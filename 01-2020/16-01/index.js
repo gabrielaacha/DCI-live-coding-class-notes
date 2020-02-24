@@ -2,6 +2,9 @@
 // there is a way to avoid to repeat the code
 // there are 3 kinds of loops (while / do, while / for)
 // it will repeat what is written until the condition becomes falthy
+console.log(
+  "--------------------loops------------------------------------------------------------"
+);
 
 let x = 3;
 if (x <= 10) {
@@ -9,14 +12,20 @@ if (x <= 10) {
 } else {
   x -= 1;
 }
-
+//.........................................................................................................
+console.log(
+  "--------------------while------------------------------------------------------------"
+);
 while (x <= 10) {
   console.log("Gabriela");
-  x++; // it will increase a number in every round and it will stop when the number gets higher than 10 // x = x + 1 increase 1 or x = x - 1 decreases 1
+  x++; // it will increase a number in every round and it will stop when the number gets higher than 10
+  // x = x + 1 increase 1 or x = x - 1 decreases 1
 }
-
 // it is not recommended to write a letter inside of the loop
-
+//...........................................................................................................
+console.log(
+  "---------------------------------------------------------------------------------------"
+);
 let y = 1;
 let result = 0; // this is declared but the value is not so important, just the declaration, to avoid problems better to declare 0
 while (y <= 10) {
@@ -24,13 +33,19 @@ while (y <= 10) {
   console.log(`${y} * 9 = ${result}`);
   y++; // very important to not forget this in order to stop the forever repetition
 } // this is a common way to use loops
-
+//.............................................................................................................
+console.log(
+  "---------------------------------------------------------------------------------------"
+);
 let count = 10;
 while (count >= 0) {
   console.log(`this is number ${count}`);
   count--;
 }
-
+//.........................................................................................................
+console.log(
+  "---------------------------------do----------------------------------------------------"
+);
 let a = 3; // variable has to be declared 3 times --> declaring, checking, increment / decrement
 do {
   // for "do" you always need a "while"
@@ -38,7 +53,10 @@ do {
   console.log(a);
   a++;
 } while (a <= 100);
-
+//..........................................................................................................
+console.log(
+  "---------------------------------------------------------------------------------------"
+);
 let zara = 100;
 do {
   console.log(`there is ${zara} on the line`);
@@ -49,31 +67,41 @@ do {
 // in "for" the order is very important
 // declaring, condition, increment/decrement
 // mostly used in nested situations
-
+console.log(
+  "---------------------------------for-------------------------------------------------"
+);
 for (let i = 0; i <= 10; i++) {
   console.log(i);
 }
 
 // print out only the even number
-
+console.log(
+  "---------------------------------------------------------------------------------------"
+);
 for (let e = 0; e <= 10; e++) {
   if (e % 2 == 0) {
     console.log(e);
   }
 }
-
+console.log(
+  "---------------------------------------------------------------------------------------"
+);
 for (let t = 0; t <= 10; ) {
   console.log(t);
   t += 2;
 }
 
 // when the increment is 100, 1000 or higher numbers...
-
+console.log(
+  "---------------------------------------------------------------------------------------"
+);
 for (let w = 100; w <= 1000; ) {
   console.log(w);
   w += 100; // this can be inside the conditioner but better if it is here
 }
-
+console.log(
+  "---------------------------------------------------------------------------------------"
+);
 //for (..) {}
 for (let i = 0; i <= 100; i++) {
   if (i == 30) {
@@ -81,14 +109,18 @@ for (let i = 0; i <= 100; i++) {
   }
   console.log(i);
 }
-
+console.log(
+  "---------------------------------------------------------------------------------------"
+);
 for (let w = 0; w <= 100; w++) {
   if (w <= 20) {
     console.log(w);
     break; // we use it to exit the loop after condition // stronger than any condition
   }
 }
-
+console.log(
+  "---------------------------------------------------------------------------------------"
+);
 let xx = false;
 for (let w = 0; w <= 100; w++) {
   if (xx) {
@@ -104,7 +136,9 @@ for (let w = 0; w <= 100; w++) {
 // DRY --> do not repeat yourself!!
 
 // in javascript everything almost can be nested, also loops
-
+console.log(
+  "---------------------------------------------------------------------------------------"
+);
 let result2 = 0;
 for (let i = 0; i < 10; i++) {
   // i = 1
@@ -114,25 +148,35 @@ for (let i = 0; i < 10; i++) {
     console.log(`${i} * ${j} = ${result2}`);
   }
 }
-
+console.log(
+  "---------------------------------------------------------------------------------------"
+);
 let str = "This is a long text"; // the loop will run as far as there are characters
 for (let i = 0; i < str.length; i++) {
   console.log(`${str[i]}`);
 }
-
+console.log(
+  "---------------------------------------------------------------------------------------"
+);
 let str2 = "Gabriela"; // the loop will run as far as there are characters
 for (let i = 0; i < str2.length; i++) {
   console.log(`${str2[i]}`);
 }
 
 //==========================EXERCISES===============================================================
-
+console.log(
+  "--------------------EXERCISES---------------------------------------------------------"
+);
 // 1.Addition. Write a program to add up the numbers 1 to 20.
-
+console.log(
+  "--------------------exercise-1-------------------------------------------------------"
+);
 for (let a = 1; a <= 20; a++) {
   console.log(a);
 }
-
+console.log(
+  "-----------------------Hadis answer-------------------------------------------------------"
+);
 // Hadis Answer
 let counterSum = 0;
 for (let i = 1; i <= 20; i++) {
@@ -144,6 +188,9 @@ console.log(counterSum);
 
 // 2.There are i bottles of beer on the wall. Write a program that will output,
 // “There is one bottle of beer on the wall.” “There are two bottles of beer on the wall” up until there are five bottles.
+console.log(
+  "--------------------exercise-2-------------------------------------------------------"
+);
 
 for (let a = 1; a <= 5; a++) {
   if (a == 1) {
@@ -152,6 +199,9 @@ for (let a = 1; a <= 5; a++) {
     console.log(`There are ${a} bottles of beer on the wall`);
   }
 }
+console.log(
+  "--------------------Hadis answer-------------------------------------------------------"
+);
 
 // Hadis Answer
 let text = "of beer on the wall";
@@ -168,6 +218,9 @@ for (let i = 1; i <= 5; i++) {
 
 // 3.The odd/even reporter. Write a program that will iterate from 0 to 20.
 // For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. “2 is even”).
+console.log(
+  "--------------------exercise-3-------------------------------------------------------"
+);
 
 for (let a = 0; a <= 20; a++) {
   if (a % 2 == 0) {
@@ -184,6 +237,9 @@ for (let a = 0; a <= 20; a++) {
 //-------------------------------------------------------------------------------------------------------------
 
 // EXCERCISE
+console.log(
+  "--------------------more exercises-------------------------------------------------------"
+);
 
 // YYYY
 // YYYY
@@ -196,15 +252,39 @@ for (let i = 0; i <= 4; i++) {
 }
 console.log(box);
 
+console.log(
+  "--------------------exercise-1-------------------------------------------------------"
+);
+
 // 1, 2, 4, 8... 128
+
+console.log(
+  "--------------------exercise-2-------------------------------------------------------"
+);
 
 // 0, 2, 4... 10
 
+console.log(
+  "--------------------exercise-3-------------------------------------------------------"
+);
+
 // 3, 6, 9 ... 15
+
+console.log(
+  "--------------------exercise-4-------------------------------------------------------"
+);
 
 // 9, 8, 7... 0
 
+console.log(
+  "--------------------exercise-5-------------------------------------------------------"
+);
+
 // 1 1 1 2 2 2 3 3 3 4 4 4
+
+console.log(
+  "--------------------exercise-6-------------------------------------------------------"
+);
 
 let result3 = 0;
 for (let i = 1; i <= 4; i++) {
@@ -217,9 +297,10 @@ for (let i = 1; i <= 4; i++) {
 
 //---------------------------------------------------
 
-// var, let, const
-
 // Arrays, they
+console.log(
+  "--------------------arrays-------------------------------------------------------"
+);
 
 let firstName = "Hadi";
 let firstName1 = "Ali";
@@ -231,17 +312,29 @@ console.log(arr[2]);
 let arrInt = [1, 2, 3, 4, 5, 6];
 console.log(arrInt[3]); // index numbers always starts from 0
 
+console.log(
+  "------------------------------------------------------------------------------------"
+);
+
 let arrNum = ["One", "Two", "Three", "Four"];
 // console.log(arrNum.length); // .length will tell me how many indexes are in the array
 for (let i = 0; i < arrNum.length; i++) {
   console.log(`${i} is the ${arrNum[i]}`);
 }
 
+console.log(
+  "------------------------------------------------------------------------------------"
+);
+
 let arrSt = []; // we declare an empty array that we wanna fill with data
 for (let i = 0; i <= 10; i++) {
   arrSt[i] = 2 + i; // arrStr[0] = 2 + 0
 }
 console.log(arrSt);
+
+console.log(
+  "------------------------------------------------------------------------------------"
+);
 
 let arrSt2 = []; // we declare an empty array that we wanna fill with data
 for (let i = 0; i <= 10; i++) {

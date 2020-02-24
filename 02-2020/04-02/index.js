@@ -6,7 +6,7 @@ const o = {
   2: "Ali",
   3: "olga"
 };
-//...............
+//..........................................................................................................................
 const obj = {
   // i use const to prevent other people to change name of the variable, etc
   name: "nancy",
@@ -14,7 +14,7 @@ const obj = {
   age: 44,
   address: "xxx str"
 };
-// i don't need this really:
+//.................i don't need this really:...............................................................................
 let aliName = "Ali";
 let aliAdd = "xxx str";
 let aliAge = 22;
@@ -36,7 +36,6 @@ car["name"] = "Ford";
 console.log(car);
 car["year"] = 2020;
 console.log(car);
-//..................
 
 //.....Accessing properties with [dot notation].............................................................................
 car.age = 22; // there is no difference between bracket notation and dot notation
@@ -49,7 +48,7 @@ console.log(car.name); // this will come up just with the value
 console.log(car["name"]); // this will give the same answer as above // up to each one which ine to use
 // when we assign new stuff go for the bracket situation
 
-//..................creating new object:
+//..................creating new object:.....................................................................................
 const save = new Object();
 const arr1 = new Array();
 console.log(save);
@@ -57,13 +56,14 @@ console.log(save);
 console.log(car.name);
 console.log(car);
 
-//...................for.............................................................................................
+//...................for......................................................................................................
 // we have fof for objects but it looks a bit different than what we saw so far
 for (let prop in car) {
   // prop for properties, we can name it as we want
   console.log(`car.${prop} : ${car[prop]}`);
 }
-//...............object.entries()...................................................................................
+
+//...............object.entries().............................................................................................
 const person = {
   name: "Zain",
   age: 20,
@@ -78,24 +78,25 @@ const person = {
   }
 };
 
-//................object.keys.......................................................................................
+//................object.keys.................................................................................................
 console.log(Object.keys(person)); // expected outcome : [ 'name', 'age', 'birthYear' ]
-//..................
-// to access the key names and not the values :
+
+//..............to access the key names and not the values....................................................................
 console.log(Object.values(person)); // expected outcome ; [ 'Zain', 20, 2000 ]
-//..................
+
+//..................loop.......................................................................................................
 // if I wanna access both of them : object.entries()
 for (let [key, value] of Object.entries(person)) {
   // now we have for of (instead of for in)
   console.log(`${key} : ${value}`);
 }
 
-//.................. methods.........................................................................................
+//.................. methods....................................................................................................
 // when the property is a function you call it methods
 person.print(); // this is the function call for the previous function // print: function() {}
 console.log(person.old());
 
-//==============================EXERCISE===============================================================================
+//==============================EXERCISE========================================================================================
 
 // Object Person. Create an object named person. Loop through the object and print both the property and value of the object.
 
@@ -230,7 +231,7 @@ const student = {
 
 console.log(Object.getOwnPropertyNames(student));
 
-//....................Hadis solution..................
+//....................Hadis solution.............................................................................................
 
 const getProperties = obj => {
   return Object.getOwnPropertyNames(obj);
@@ -246,7 +247,7 @@ console.log(getProperties(person));
 // 'p3'
 // ]
 
-//....................................................
+//.............................................................................................................................
 
 // countLetters(“tree”) -> expected output: t: 1, r: 1, e: 2
 // console.log(arrSpliting("small"));

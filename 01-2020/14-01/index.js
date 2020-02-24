@@ -1,4 +1,7 @@
-// switch (<expression>){ ... } // it is used for ex. for currencies, for phone prefixes,
+//......switch (<expression>){ ... } // it is used for ex. for currencies, for phone prefixes...................
+console.log(
+  "----------------------switch (<expression>){ ... } ---------------------------------------"
+);
 const color = "Pink";
 switch (color) {
   case "Pink":
@@ -13,9 +16,11 @@ switch (color) {
   default:
     console.log("Noooo that's crazy");
 }
-
-// an example of switch in order to choose one month of the year:
-
+// expected outcome : cool
+//.................an example of switch in order to choose one month of the year:.........................
+console.log(
+  "----------------------an example of switch---------------------------------------"
+);
 const month = 9;
 switch (month) {
   case 0.1:
@@ -57,9 +62,12 @@ switch (month) {
   default:
     console.log("This is not real");
 }
+// expected outcome : Sept
 
-// another example for switch:
-
+//................another example for switch:..............................................................
+console.log(
+  "----------------------switch (another example) ---------------------------------------"
+);
 const x = 22.22;
 switch (x) {
   case 1999.33:
@@ -75,8 +83,12 @@ switch (x) {
     // you always need a default in case the user types something that is not listed
     console.log("so this is not for fun or is it!");
 }
+// expected outcome : this is wrong
 
-// switch` vs. `else if`
+//.....switch` vs. `else if`........................................................................
+console.log(
+  "----------------------switch` vs. `else if`---------------------------------------"
+);
 
 const num = 1;
 if (num <= 10 || num >= 0) {
@@ -112,11 +124,18 @@ switch (num2) {
     console.log("this is fun");
 }
 
+// expected outcome:
+// it is num in the range of 0 and 10
+// 1
+// It is new num
+// 1
+
 // the order is very important, the statement that is on the top gets the priority // if the string is empty it would be 0 and divisible by 3 and 5 so it would print FizzBuzz
 
 //=====================EXERCISES=====================================================================================
-
-//===================================================================================================================
+console.log(
+  "----------------------exercise-1---------------------------------------"
+);
 
 //Let’s play mini FizzBuzz! For any given number, if the number is:
 //divisible by 3, print “Fizz”.
@@ -138,9 +157,13 @@ if (miniFizz % 5 == 0 && miniFizz % 3 == 0) {
   console.log(miniFizz);
 }
 
+// expected outcome : 1
 //-------------------------------------------------------------------------------
 
 // homework
+console.log(
+  "----------------------homework ex.1---------------------------------------"
+);
 
 // Declare two variables: “a” with the value of true, and “b” with the value of false.
 // Check the result of:
@@ -155,7 +178,15 @@ console.log(a && b);
 console.log(a || b);
 console.log(!a && b);
 
+// expected outcome:
+// false
+// true
+// false
+
 //-------------------------------------------------------------------------------
+console.log(
+  "----------------------homework ex.2---------------------------------------"
+);
 
 // Declare three more variables “x”, “y”, “z”. Give these variables number values.
 // Check the result of whether:
@@ -176,3 +207,13 @@ console.log(z1 < y1 || z1 > x1);
 console.log(x1 == z1 || x1 !== y1);
 console.log(x1 >= 10 && y1 <= 10);
 console.log(x1 * z1 < 100 || x1 * y1 > 100);
+
+// expected outcome:
+// false
+// true
+// true
+// true
+// false
+// true
+
+//===================================================================================================================

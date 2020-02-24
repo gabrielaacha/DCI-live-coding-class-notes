@@ -1,6 +1,11 @@
+console.log(
+  "--------------------------------------start---------------------------------------------------------------------------------------------------"
+);
 // console.log(x.toFixed(4));
+console.log(
+  "--------------------------------------toFixed()---------------------------------------------------------------------------------------------------"
+);
 let old, nice, crazy;
-
 old = true;
 nice = false;
 crazy = true;
@@ -13,7 +18,10 @@ console.log(old !== nice); // true because old and crazy are ot equal
 // boolean inversion with !
 //console.log(crazy ! "Yeah" : "nope");
 
-//  givenName || firstName || "ABC";
+//.....................givenName || firstName || "ABC";..............................................................................................
+console.log(
+  "--------------------------------givenName || firstName || ´ABC´;---------------------------------------------------------------------------------------------------"
+);
 
 console.log("Abc");
 let givenName, firstName;
@@ -22,17 +30,25 @@ console.log(givenName || firstName || "Abc"); // if all of them ar eundefined th
 
 // let's do some algorithms
 
-// Nancy's income is 500€ per week. how much does Nancy makes every year?
+//===========================================================Exercise====================================================================================
+//Nancy's income is 500€ per week. how much does Nancy makes every year?
+console.log(
+  "--------------------------------------Exercise--1---------------------------------------------------------------------------------------------------"
+);
 const nancySalary = 500 * 52;
 // console.log(nancySalary)
 console.log(`Nancy Salary ${nancySalary} Euro in one year`);
 
+console.log(
+  "--------------------------------------Exercise--2---------------------------------------------------------------------------------------------------"
+);
 // the amount of hours Nancy worked over the last two weeks are 8, 6, 5, 9, 8, 2, 1, 8.5, 7, 4 what is nancy's average hour?
-
 const nancyAverage = (8 + 6 + 5 + 9 + 8 + 2 + 1 + 8.5 + 7 + 4) / 10;
 console.log(nancyAverage);
 console.log(`Nancy average hours of ${nancyAverage} in a week`);
-
+console.log(
+  "--------------------------------------Exercise--2--Hadis------------------------------------------------------------------------------------------------"
+);
 // hadis version
 const nancyWorkingHours = 8 + 6 + 5 + 9 + 8 + 2 + 1 + 8.5 + 7 + 4;
 let nancyAverage2 = nancyWorkingHours / 10;
@@ -40,7 +56,12 @@ console.log(
   `Nancy worked last two weeks ${nancyWorkingHours}, the average is ${nancyAverage2}`
 );
 
+//========================================================================================================================================================
+
 // if (<boolean>){...}
+console.log(
+  "--------------------------------------if (<boolean>){...}---------------------------------------------------------------------------------------------------"
+);
 console.log(true ? "yeah cool" : "nope sorry");
 
 let a, b, c;
@@ -62,6 +83,9 @@ if (a == b && c) {
 }
 
 // `if` vs. ternary operator | if (true) {condition} curly brackets for the truthy situation {} if this is not true java script will ignore it
+console.log(
+  "--------------------------------------`if` vs. ternary operator---------------------------------------------------------------------------------------------------"
+);
 // preserved words can't be used as variables in java script, for example if
 if (true) {
   console.log("yeah it is true");
@@ -78,7 +102,10 @@ if (1 < 4 || (1 < 55 && false)) {
 
 //_______________________________________________________________________________________________________________________________________________________
 
-//EXERCISES
+//=================================EXERCISES====================================================================================================================
+console.log(
+  "--------------------------------------exercise--3---------------------------------------------------------------------------------------------------"
+);
 // A math student scored 75, 70, 85, 90, 100 on the first five tests he took . After he took his sixth math test, the average is now 85. What did he score on the sixth test?
 const mathStudent = 75 + 70 + 85 + 90 + 100;
 const studentAverageTest5 = mathStudent / 5;
@@ -92,6 +119,9 @@ let studentGrade = studentAverageTest6 - mathStudent;
 
 console.log(`the expected score in the 6th test should be ${studentGrade}`);
 
+console.log(
+  "--------------------------------------exercise--4---------------------------------------------------------------------------------------------------"
+);
 // For James to get a 1st class degree, he needs to get an average of 80% in all 9 of his assessments. He has taken 8 assessments and his average is 78%. What is the minimum percentage he must get in his last assessment to ensure he gets a first class?
 
 const jamesAverage8 = 78 * 8;
@@ -110,6 +140,9 @@ if (jamesAverage9 <= 96) {
 
 console.log(`James needs a minimum of ${jamesAverage9}% to get an 80% average`);
 
+console.log(
+  "--------------------------------------exercise--5---------------------------------------------------------------------------------------------------"
+);
 // Check if two given integer values are in the range 50 to 99 (this includes both 50 and 99). Print true if either of them are in the range.
 
 let intMin = 50;
@@ -121,6 +154,9 @@ if ((x >= 50 && x <= 99) || (z >= 50 && x <= 99)) {
   console.log("integer values are between 50 and 99");
 }
 
+console.log(
+  "--------------------------------------exercise--6---------------------------------------------------------------------------------------------------"
+);
 // Check if three given integer values are in the range 50 to 99 (inclusive). Print true if one or more of them are in the range.
 
 let intNumNum1 = 67;
@@ -134,6 +170,9 @@ if (
 );
 console.log(true);
 
+console.log(
+  "--------------------------------------exercise--7---------------------------------------------------------------------------------------------------"
+);
 // Declare the variables a, b and c, and give them number values. Check which one out of the three variables has the largest value and print it to the console. Then change the values of the variables to see if your conditional still works.
 
 let a1 = 3;
@@ -142,6 +181,9 @@ let c1 = 58;
 
 console.log(Math.max(a1, b1, c1));
 
+console.log(
+  "--------------------------------------exercise--8---------------------------------------------------------------------------------------------------"
+);
 // Create a new string adding “Py” in front of a given string. If the given string begins with “Py” then print the original string.
 
 let str1 = "Py";
@@ -155,7 +197,9 @@ let str = "Python";
 if (str.substring(0, 2) === "Py") {
   console.log(str);
 }
-
+console.log(
+  "--------------------------------------exercise--9--------------------------------------------------------------------------------"
+);
 // Calculate the sum of the two integers. If the sum is in the range 50 to 80, print 65, otherwise print 80.
 
 let intNum1 = 65;
@@ -168,6 +212,9 @@ if (y > 59 && y < 80) {
   console.log(80);
 }
 
+console.log(
+  "--------------------------------------exercise--10--------------------------------------------------------------------------------"
+);
 // Check whether the sum of two integers is 8, or whether their difference is 8. If one of these is the case, print true.
 
 let intInt1 = 3;
@@ -180,6 +227,9 @@ if (intSum == 8 || intDiff == 8) {
   console.log(true);
 }
 
+console.log(
+  "--------------------------------------exercise--11--------------------------------------------------------------------------------"
+);
 // Check whether either one of two integers is 15, or if their sum is 15. If one of these is the case, print true.
 let intNumero1 = 5;
 let intNumero2 = 10;
@@ -189,6 +239,9 @@ if (intNumero1 == 15 || intNumero2 == 15 || intSum2 == 15) {
   console.log(true);
 }
 
+console.log(
+  "--------------------------------------exercise--12--------------------------------------------------------------------------------"
+);
 // Check whether one of two integers is a multiple of 7 or 11. If so, print true.
 
 let intMul1 = 45;
@@ -204,6 +257,9 @@ if (
   console.log("intMul is multiple of 7 or 11");
 }
 
+console.log(
+  "--------------------------------------exercise--13--------------------------------------------------------------------------------"
+);
 // Calculate the sum of the two given integers. If the two values are the same, then print triple their sum.
 
 let givenInt1 = 23;
@@ -214,6 +270,9 @@ if (givenInt1 === givenInt2) {
   console.log(givenIntTrip);
 }
 
+console.log(
+  "--------------------------------------exercise--14--------------------------------------------------------------------------------"
+);
 // Calculate the difference between a specified number and 19. Print double the difference if the specified number is greater than 19.
 
 let num1 = 3;
@@ -223,6 +282,9 @@ if (numDiff < 19) {
   console.log(numDo);
 }
 
+console.log(
+  "--------------------------------------exercise--15--------------------------------------------------------------------------------"
+);
 // Mark and John are trying to compare their BMI (Body Mass Index),
 // which is calculated using the formula: BMI = mass / (height * height). (mass in kg, i.e. 72.5, and height in metres, i.e. 1.65).
 // Store Mark’s and John’s mass and height in variables.
@@ -255,6 +317,9 @@ if (bmiMark > bmiJohn) {
 let bmiHighest = Math.max(bmiMark, bmiJohn);
 console.log(bmiHighest);
 
+console.log(
+  "--------------------------------------exercise--15--------------------------------------------------------------------------------"
+);
 // Make a variable for firstName and age and give each variable values.
 // Create an if/else statement to check whether the person’s age is less than 13.
 // If so, print “firstName is a child”.
@@ -277,6 +342,9 @@ if (age >= 20 && age <= 30) {
   return console.log(`${firstName2} is an adult`);
 }
 
+console.log(
+  "--------------------------------------exercise--15--Hadis---------------------------------------------------------------------------"
+);
 // Hadi's solution
 
 const firstName3 = "Peter";
@@ -294,7 +362,9 @@ if (age2 < 13) {
     }
   }
 }
-
+console.log(
+  "--------------------------------------exercise--16--------------------------------------------------------------------------------"
+);
 // it's same but omitting the curly brackets // technically it is the same but this is more common
 const age3 = "13";
 if (age3 < 13) {
@@ -306,3 +376,5 @@ if (age3 < 13) {
 } else {
   console.log("is not a number");
 }
+
+//===================================================================================================================================================================

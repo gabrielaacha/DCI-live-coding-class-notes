@@ -19,7 +19,7 @@ objects[1].printOut(); // dot notation:
 objects[1]["printOut"](); //------second way to call --> bracket notation
 
 // clones vs. references
-// simple values: numbers, boolean,
+//------------------simple values: numbers, boolean,----------------------------------------------------------------------
 let str = " How are you"; // primitive value
 let newStr = str; // cloning, copy of the primitive value
 str = "something else"; //
@@ -30,14 +30,14 @@ let num = 222;
 let newNum = num;
 console.log(newNum);
 
-//with array
+//------------------with array----------------------------------------------------------------------------------------------
 const names = ["Ali", "Olga", "Nancy", "Zain"];
 let newArr = names;
 console.log(newArr);
 newArr[1] = "New";
 console.log(newArr);
 
-//with objects
+//------------------with objects--------------------------------------------------------------------------------------------
 const car = {
   name: "ford",
   year: "2020",
@@ -229,6 +229,26 @@ console.log(scrabble());
 // }
 
 // console.log(score(arrayScore));
+
+console.log("ex 2");
+let arrayScore = [
+  { tile: "N", score: 1 },
+  { tile: "K", score: 5 },
+  { tile: "Z", score: 10 },
+  { tile: "X", score: 8 },
+  { tile: "D", score: 2 },
+  { tile: "A", score: 1 },
+  { tile: "E", score: 1 }
+];
+//console.log(arrayScore[3].score)
+function score(arr) {
+  let result = 0;
+  for (let i = 0; i < arr.length; i++) {
+    result += arrayScore[i].score;
+  }
+  return result;
+}
+console.log(score(arrayScore));
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
