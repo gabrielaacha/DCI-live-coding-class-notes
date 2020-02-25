@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--css file-->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>new HTML</title>
+  </head>
+  <body>
+    <h1>New File</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nulla
+      doloremque magnam laboriosam nobis, ipsum architecto ipsam dicta illo sed
+      aperiam aliquam saepe
+      <i>dignissimos maxime laudantium sit harum inventore</i>
+      repellat corporis iure. Recusandae aliquam dolor iste ratione sunt
+      similique eos, in quas id ex vero, quae quod. Doloremque, harum sint!
+    </p>
+    <ul>
+      <li>this</li>
+      <li>is</li>
+      <li>an</li>
+      <li>unordered</li>
+      <li>list</li>
+    </ul>
+    <ol>
+      <li>this</li>
+      <li>is</li>
+      <li>an</li>
+      <li>unordered</li>
+      <li>list</li>
+    </ol>
+    <table>
+      <tr>
+        <th id="name">Name</th>
+        <th class="age">Age</th>
+      </tr>
+      <tr>
+        <td class="firstRow">Hadi</td>
+        <td id="firstRow">22</td>
+      </tr>
+    </table>
+
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <form action="index.js" method="GET">
+      <!--form will connect with the server side-->
+
+      <input
+        type="text"
+        name="name"
+        id="n1"
+        class="form1"
+        placeholder="your name"
+        maxlength="3"
+        required
+        autofocus
+      />
+
+      <!--you can only have autofocus in one space-->
+      <!--maxlength will put a max of characters that can be entered-->
+      <span>*</span>
+      <!--this field is required-->
+      <br />
+      <input
+        type="text"
+        name="add"
+        id="ad1"
+        class="form1"
+        placeholder="comes here"
+        maxlength="3"
+      />
+      <br />
+      <input type="radio" name="r1" id="22" class="form1" value="male" />male
+      <br />
+      <input
+        type="radio"
+        name="r1"
+        id="22"
+        class="form1"
+        value="female"
+      />female
+      <br />
+      <input type="radio" name="r1" id="22" class="form1" value="other" />others
+      <!--they all should share the same name in order to have one option at a time-->
+      <br />
+      <input type="submit" class="form1" value="Submit" />
+    </form>
+    <br />
+
+    <form action="/action_page.php">
+      <label for="username">Username</label>
+      <br />
+      <input type="text" id="username" name="username" required />
+      <br />
+      <label for="psw">Password</label>
+      <br />
+      <input
+        type="password"
+        id="psw"
+        name="psw"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+        required
+      />
+      <br />
+      <input type="submit" value="Submit" />
+      <br />
+      <br />
+      <input type="image" src="img/tornado.jpg" width="200px" alt="tornado" />
+      <br />
+      <input type="reset" value="reset" />
+    </form>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.206816458876!2d13.399704316088771!3d52.47539097980563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84fe8f7d899eb%3A0x88898e99acbb718b!2sTempelhofer%20Feld!5e0!3m2!1ses!2sde!4v1582632902349!5m2!1ses!2sde"
+      width="200"
+      height="200"
+      frameborder="5"
+      style="border:5;"
+      allowfullscreen=""
+    ></iframe>
+    <!--inline frame element-->
+    <!--iframe is a window to something else-->
+    <!--it enables to see the google map on the website-->
+    <!--you can also write the address of a website but some websites don't allow to do it-->
+    <br />
+    <iframe
+      width="354"
+      height="200"
+      src="https://www.youtube.com/embed/bGDK1rpykOQ"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

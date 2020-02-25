@@ -1,0 +1,81 @@
+body {
+  height: 100px;
+  background-image: radial-gradient(red, yellow);
+}
+
+header {
+  background-color: darkgreen;
+}
+
+.header {
+  background-image: url(img/tornado.jpg);
+}
+
+nav {
+  background-color: darkblue;
+  padding: 1px;
+  margin: 30px;
+  padding-left: 40px;
+}
+
+nav li {
+  display: inline;
+  padding: 3px;
+  margin: 30px;
+}
+
+main {
+  float: left;
+  background-color: darkmagenta;
+  margin: 0 1.5%;
+  width: 63%;
+}
+
+aside {
+  background-color: chartreuse;
+  margin: 2%;
+  width: 30%;
+  height: 300%;
+}
+
+article {
+  background-color: blueviolet;
+  color: white;
+  padding: 0px;
+  padding-bottom: 0px;
+  clear: both;
+  margin: 1.5%;
+}
+
+p {
+  padding: 20px;
+}
+
+aside {
+  float: right;
+}
+footer {
+  background-color: cadetblue;
+}
+
+.one {
+  background-color: goldenrod;
+}
+
+.two {
+  background-color: darkorange;
+}
+
+.four {
+  background-color: darkorange;
+}
+
+.img1 {
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-bottom: 30px;
+}
+
+.iframe1 {
+  margin: 2%;
+}
