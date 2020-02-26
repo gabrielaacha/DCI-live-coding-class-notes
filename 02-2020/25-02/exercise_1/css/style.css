@@ -4,11 +4,13 @@ body {
 }
 
 header {
-  background-color: darkgreen;
+  background-image: radial-gradient(rgb(208, 255, 0), rgb(72, 255, 0));
 }
 
 .header {
-  background-image: url(img/tornado.jpg);
+  height: 80px;
+  background-image: radial-gradient(rgb(60, 0, 255), rgb(72, 255, 0));
+  /* background-image: url(img/tornado.jpg); */
 }
 
 nav {

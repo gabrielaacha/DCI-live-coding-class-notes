@@ -1,0 +1,146 @@
+body {
+  background-image: url(../img/tornado.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  /* margin:0 auto is very common, 
+  same as margin: 0 auto 0 auto */
+  font-family: "Fira Mono";
+}
+
+.tornado-img {
+  float: inline-end;
+  width: 100px;
+  height: 100px;
+  border: 4px black dashed;
+  border-color: red orange yellow yellowgreen;
+  border-radius: 50%;
+}
+
+.tornado2-img {
+  float: right;
+  width: 100px;
+  height: 100px;
+  padding: 4px 4px 20px 4px;
+  /* if you write 
+  padding: 20px 40px 
+  it means first top and bottom and then left 
+  and right*/
+  /* same as padding-right: 4px;
+  padding-bottom: 20px;
+  padding-left: 4px; */
+  padding: white;
+  background: orange;
+  border: 0.5px black solid;
+}
+
+@font-face {
+  font-family: "Fira Mono";
+  src: ulr();
+} /*the font has to be downloaded*/
+
+h1,
+h4,
+p,
+div {
+  color: pink;
+}
+
+.sq {
+  margin-left: 35%;
+  background-image: linear-gradient(rgb(0, 119, 255), rgb(72, 255, 0));
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  border: 2px black dashed;
+  border-radius: 50%;
+}
+
+.sq2 {
+  margin-left: 45%;
+  width: 50px;
+  height: 50px;
+  background-color: lightgreen;
+  border: 2px black solid;
+}
+
+.sq3 {
+  margin-left: 45%;
+  width: 50px;
+  height: 80px;
+  background-color: pink;
+  border: 2px black solid;
+}
+
+.sq4 {
+  margin-left: 45%;
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border: 2px black solid;
+  border-radius: 50%;
+}
+
+.sq5 {
+  margin-left: 47%;
+  width: 0px;
+  height: 0px;
+  border-top: 40px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 20px solid blue;
+}
+
+.sq6 {
+  margin-left: 45%;
+  width: 54px;
+  height: 54px;
+  padding: 0px;
+  background-color: green;
+  border: 2px black solid;
+}
+
+.sq7 {
+  margin-left: 0%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: orange;
+  border: 2px black solid;
+}
+
+.test-box {
+  float: right;
+  width: 50%;
+  height: 34px;
+  border: 2px black solid;
+}
+
+.random-text {
+  letter-spacing: 5px;
+  word-spacing: 50px;
+  line-height: 50px;
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+/* 
+div p:last-child {
+  background-color: indigo;
+} */
+
+div p:only-child {
+  background-color: lightcoral;
+}
+
+.move {
+  width: 500px;
+  height: 200px;
+  background-color: orange;
+  border: 10px #ccc dotted;
+}
+
+.move:hover {
+  width: 800px;
+  height: 900px;
+  box-shadow: 5px 5px 5px gray;
+}
