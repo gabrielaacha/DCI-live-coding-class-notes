@@ -1,0 +1,78 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; /*reset settings in all elements of the page*/
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration-color: greenyellow;
+  background-color: forestgreen;
+  text-decoration: none;
+  padding: 3px;
+}
+
+p {
+  font-size: 2rem;
+}
+
+a:active {
+  color: lightblue;
+}
+
+a:link {
+  color: pink;
+} /* any link will become pink */
+
+a:visited {
+  color: magenta;
+}
+
+a:hover {
+  background-color: darkcyan;
+  transition: 1s;
+  box-shadow: 3px 3px 2px rgba(95, 79, 78, 0.69);
+}
+
+nav ul li {
+  list-style: none;
+  display: inline; /*this will make the menu horizontal, one eŕar*/
+  border: 2px black;
+  padding: 5px;
+}
+
+.imgody {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  /* margin: 2%;
+  padding: 20%; */
+}
+
+.imgody:hover {
+  box-shadow: 4px 4px 3px rgba(95, 79, 78, 0.69);
+  transition: 3s;
+}
+
+.placeholdertext {
+  font-size: smaller;
+}
+
+.text {
+  padding: 10px 30px 20px 20px;
+}
+
+h5,
+h3 {
+  text-align: center;
+}
+
+p {
+  padding: 10px;
+  font-size: smaller;
+}
+
+.arabic {
+  text-align: right;
+}
