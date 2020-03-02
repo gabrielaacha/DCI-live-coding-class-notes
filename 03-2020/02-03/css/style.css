@@ -1,0 +1,144 @@
+/* element selector*/
+body {
+  /*display: none; -->  useful for phone interfaces*/
+  font-size: 16px;
+  margin: 0;
+}
+
+/*ID selector*/
+#random-text {
+  color: teal;
+}
+
+/*.class selector*/
+.main-page {
+  background-color: turquoise;
+}
+
+/*element element selector
+inside element*/
+div p {
+  color: firebrick;
+}
+
+/*element > element Selector very common
+element parent element --> this is pointing to the first child only*/
+div > p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: yellow;
+}
+
+/*element + element selector, 
+element immediately after element*/
+/*every element immediately after the selected element, in this case every span after div*/
+div + span {
+  color: orchid;
+}
+
+/*tilde element1 ~ element2 Selector
+element preceded element*/
+span ~ p {
+  color: peachpuff;
+}
+
+/*[attribute] selector--> every name in the page would have this value*/
+[readonly] {
+  background-color: slateblue;
+}
+
+/*[attribute=value] Selector*/
+[type="submit"] {
+  background-color: tomato;
+}
+
+/*[attribute~=value] Selector*/
+[alt~="sun"] {
+  width: 200px;
+  border: 2px #000 solid;
+}
+
+/*[attribute^=value] Selector --> not very common to see --> any attribute starting with*/
+[alt^="ocean"] {
+  border: 2px #000 solid;
+  border-radius: 20%; /*! important--> never use it--> */
+}
+
+/*[attribute$=value] selector
+value ends with--> you can be more specific and add img or another selector at the beginning*/
+img [alt$="bigTree"] {
+  padding: 5px;
+}
+
+/*[attribute*=value] selector
+value ends with*/
+div[class*="text"] {
+  font-size: 2rem;
+}
+
+/*pseudo classes. one of them is hover*/
+/*hover*/
+[class*="text"]:hover {
+  background-color: olive;
+} /*is the user in the range of this element?*/
+
+/*:visited*/
+/*related with cookies and the visitor has visited*/
+/*if you use the a selector it selects every a in the page*/
+a:visited {
+  color: pink;
+}
+
+/*:*/
+input:focus {
+  outline: none; /*takes away the default setting*/
+  border: 2px pink solid;
+  box-shadow: 3px 3px 3px #ccc;
+}
+
+input[name="firstname"] + span {
+  color: red;
+}
+a
+/* :active */
+
+a:active {
+  background-color: plum;
+  border-radius: 30%;
+  /*this turns the link into this color i click on the link*/
+}
+
+/* :checked */
+input:checked {
+  width: 20px;
+  background-color: sandybrown;
+  /*for things that have been already visited*/
+}
+
+/*::after
+:after css2 and :: after css3 --> for internet explorer*/
+div[class="text-main"]::after {
+  content: " Hadi";
+  /*IE*/
+}
+/* div[class="text-main"]:after {
+} */
+
+
+/* :target --> to remove take out the hashtag from  the top of the page*/
+:target {
+  border: 3px black dashed:
+}
+
+
+/* :nth-child() */
+/*selects any nr child (4th, 5th, 6th, etc...*/
+/* it selects the nth nr child, in this case the second*/
+
+tr:nth-child(2n + 1) { /*if I write 2n instead of 2, every second child will follow this rule*/
+background-color: darkorange;
+
+}
+
+/* tr:nth-child(3n) {
+  background-color: darkred;
+} */
