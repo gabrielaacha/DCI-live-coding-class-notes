@@ -1,0 +1,21 @@
+/*pseudoelement is a key word added to a selector that lets you style a specific part of the selected element*/
+
+[type="text"]::placeholder {
+  color: orange;
+}
+
+/*pseudo-class is a keyword added to a selector that specifies a special state of the selected elements*/
+
+/*more pseudo-classes*/
+
+/*::before vs :before*/
+/*2 columns--> css3 pseudo-elements*/
+/*css 3 and css*/
+
+/*first letter (:first letter)*/
+
+.text::first-letter {
+  color: yellowgreen;
+  font-weight: bold;
+  size: 40px;
+}

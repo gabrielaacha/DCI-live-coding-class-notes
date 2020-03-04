@@ -1,0 +1,94 @@
+div table tr td {
+  border-radius: 20%;
+  border: 2px black solid;
+  margin: 5px;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  /* margin: 100px; */
+  /* padding: 20px; */
+}
+
+/*--------------green-----------------------*/
+tr:nth-child(4) :nth-child(1n) {
+  background-color: rgb(13, 195, 98);
+}
+tr:nth-child(5) :nth-child(1n) {
+  background-color: rgb(13, 195, 98);
+}
+tr:nth-child(6) :nth-child(1n) {
+  background-color: rgb(13, 195, 98);
+}
+tr:nth-child(7) :nth-child(1n) {
+  background-color: rgb(13, 195, 98);
+}
+
+/*-----------------blue------------------------*/
+table:nth-child(1) :first-child {
+  background-color: blue;
+}
+
+/*------------------brown------------------------*/
+tr:nth-child(2) td:nth-child(2) {
+  background-color: brown;
+}
+
+/*--------------row 1 case 1--------------------*/
+tr:nth-child(1) :first-child {
+  background-color: yellow;
+}
+
+/*------------------pink--------------------------*/
+tr :last-child {
+  background-color: fuchsia;
+}
+
+/*------------------orange------------------------*/
+tr :nth-child(17) {
+  background-color: orange;
+}
+
+/*----------------yellow2--------------------------*/
+tr :nth-child(16) {
+  background-color: yellow;
+}
+
+tr :nth-child(15) {
+  background-color: yellow;
+}
+
+/*----------------turquoise--------------------------*/
+
+tr:nth-child(8) :nth-child(1n) {
+  background-color: turquoise;
+}
+
+/*----------------teal--------------------------*/
+
+tr:nth-child(9) :nth-child(1n) {
+  background-color: teal;
+}
+
+/*deep blue*/
+/* {
+  background-color: teal;
+} */
+
+/* table:nth-child(1) :first-child {
+  background-color: chartreuse;
+  justify-content: space-between;
+} */
+
+/* tr ~ td {
+  background-color: chartreuse;
+}
+
+div table tr {
+  justify-content: space-between;
+  background-color: chartreuse;
+} */
+
+/* justify-content:space-around;
+align-items:flex-end; */
+/* justify-content:space-between; */
