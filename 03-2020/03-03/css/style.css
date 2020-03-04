@@ -120,3 +120,18 @@ form {
   font-weight: bold;
   font-size: 40px;
 }
+
+/*visual content like img*/
+
+.image-radius img {
+  border-radius: 50%;
+  width: 50vw;
+}
+
+.image-radius {
+  padding-top: 3rem;
+  width: 100vw;
+  text-align: center;
+}
+
+/*%, border radius*/
