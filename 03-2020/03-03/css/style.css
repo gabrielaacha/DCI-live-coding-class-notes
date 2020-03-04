@@ -23,21 +23,22 @@
 .text::first-letter {
   color: yellowgreen;
   font-weight: bold;
-  size: 40px;
+  font-size: 40px;
 }
 
 /*display none vs. opacity*/
 .cult-image {
-  width: 200px;
-  height: 100px;
+  width: 400px;
+  height: 200px;
   box-shadow: 3px 3px 3px rgba(150, 245, 221, 0.6);
   filter: grayscale(50);
+  margin-bottom: 3rem;
 }
 
 .cult-image:hover {
-  width: 209px;
+  width: 409px;
   transition: 2s ease-in; /*direction in or out*/
-  height: 150px;
+  height: 250px;
   filter: grayscale(0);
   opacity: 1;
 }
@@ -75,10 +76,40 @@
 }
 
 form {
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   display: inline-block;
   text-align: center;
 }
 
 /*visual content like img*/
+
+/* .text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+.move-elements-center {
+  /* display: block; */
+  text-align: center;
+  background-color: yellow;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-space {
+  height: 10em;
+}
+
+.random-text {
+  background-color: magenta;
+  text-align: center;
+  padding: 2rem 1rem 3rem 1rem;
+}
+
+.random-text::first-letter {
+  color: goldenrod;
+  font-weight: bold;
+  font-size: 40px;
+}
