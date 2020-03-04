@@ -1,7 +1,13 @@
-/*pseudoelement is a key word added to a selector that lets you style a specific part of the selected element*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*pseudo-element is a key word added to a selector that lets you style a specific part of the selected element*/
 
 [type="text"]::placeholder {
   color: orange;
+  font-family: Arial;
 }
 
 /*pseudo-class is a keyword added to a selector that specifies a special state of the selected elements*/
@@ -12,10 +18,67 @@
 /*2 columns--> css3 pseudo-elements*/
 /*css 3 and css*/
 
-/*first letter (:first letter)*/
+/* first letter (:first letter) */
 
 .text::first-letter {
   color: yellowgreen;
   font-weight: bold;
   size: 40px;
 }
+
+/*display none vs. opacity*/
+.cult-image {
+  width: 200px;
+  height: 100px;
+  box-shadow: 3px 3px 3px rgba(150, 245, 221, 0.6);
+  filter: grayscale(50);
+}
+
+.cult-image:hover {
+  width: 209px;
+  transition: 2s ease-in; /*direction in or out*/
+  height: 150px;
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/*vh & vw (view width) % has to do with the user settings whereas this will apply no matter what*/
+
+.menu {
+  width: 15vw;
+  height: 100vh;
+  background-color: orange;
+}
+
+.main-text {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  margin: 0;
+  background-color: pink;
+  font-size: 2rem;
+  width: 85vw; /*view width*/
+  height: 100vh; /*view height*/
+  text-align: center;
+  display: flex;
+  align-items: center; /*this aligns the text at the center from top to bottom*/
+  justify-content: center;
+}
+
+.form-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+  background-color: rebeccapurple;
+}
+
+form {
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  text-align: center;
+}
+
+/*visual content like img*/
