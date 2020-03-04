@@ -49,6 +49,10 @@
   width: 15vw;
   height: 100vh;
   background-color: orange;
+  align-items: center;
+  text-align: left;
+  padding-left: 1.5rem;
+  display: flex;
 }
 
 .main-text {
@@ -56,7 +60,9 @@
   top: 0;
   left: 15%;
   margin: 0;
-  background-color: pink;
+  color: red;
+  /* background-color: pink; */
+  background-image: url(../img/cult.jpg);
   font-size: 2rem;
   width: 85vw; /*view width*/
   height: 100vh; /*view height*/
@@ -100,6 +106,7 @@ form {
 
 .footer-space {
   height: 10em;
+  background-color: green;
 }
 
 .random-text {
