@@ -35,19 +35,21 @@ h1 {
 
 /* background-clip:border-box */
 .ex1 {
-  border: 4px black solid;
+  border: 4px black dashed;
   padding: 3.5rem;
-  background: url(../img/sky.jpg);
-  background-size: 30px;
+  background-color: teal;
+  /* background: url(../img/sky.jpg); */
+  background-size: 130px;
   background-repeat: no-repeat;
   background-clip: border-box;
   /* image starts where the border starts__will calculate width and height and will contain it */
 }
 
 .ex2 {
-  border: 4px black solid;
+  border: 4px black dashed;
   padding: 3.5rem;
-  background: url(../img/sky.jpg);
+  background-color: teal;
+  /* background: url(../img/sky.jpg); */
   background-size: 130px;
   background-repeat: no-repeat;
   background-clip: content-box;
@@ -55,13 +57,29 @@ h1 {
 }
 
 .ex3 {
-  border: 4px black solid;
+  border: 4px black dashed;
   padding: 10.5rem;
-  background: url(../img/sky.jpg);
+  background-color: teal;
+  /* background: url(../img/sky.jpg); */
   background-size: 200px;
   background-repeat: no-repeat;
   background-clip: padding-box;
   /* whenever the padding starts the image starts */
+}
+
+.ex4 {
+  color: transparent;
+  background-clip: text;
+  background-image: url(../img/sky.jpg); /* the image gets behind the text */
+  -webkit-background-clip: text;
+}
+
+/* background-attachment*/
+.ex5 {
+  background-image: url(../img/birds.gif);
+  background-size: 55rem;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* npm life-server */
