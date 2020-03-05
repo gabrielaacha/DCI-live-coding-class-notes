@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 16px;
+}
+
+body {
+  margin: auto;
+  /* background-color: aqua; */
+}
+
+.main-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat; /*or repeat-x*/
+  background-color: aqua;
+  background-image: url(../img/birds.gif), url(../img/sky.jpg);
+  background-repeat: repeat-x, no-repeat;
+  background-position: center;
+  background-size: 80rem, cover; /*it will cover the whole surface of the page*/
+
+  /* sometimes you see background on its own, there is a short form to give properties to the images, only use when u have on eimage and not more */
+  /* background: url(../img/sky.jpg), no-repeat, center; */
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+/* background-image */
+
+/* background-clip:border-box */
+.ex1 {
+  border: 4px black solid;
+  padding: 3.5rem;
+  background: url(../img/sky.jpg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  /* image starts where the border starts__will calculate width and height and will contain it */
+}
+
+.ex2 {
+  border: 4px black solid;
+  padding: 3.5rem;
+  background: url(../img/sky.jpg);
+  background-size: 130px;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  /* where is the content that i am working on--> image starts when h starts, it goes wherever the content goes */
+}
+
+.ex3 {
+  border: 4px black solid;
+  padding: 10.5rem;
+  background: url(../img/sky.jpg);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  /* whenever the padding starts the image starts */
+}
+
+/* npm life-server */
