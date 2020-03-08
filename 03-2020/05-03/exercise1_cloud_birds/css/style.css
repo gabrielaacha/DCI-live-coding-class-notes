@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 16px;
+}
+
+.try1 {
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/bird_1.gif), url(../img/bird_2.gif),
+    url(../img/birds_5.gif), url(../img/bird_3.gif), url(../img/bird_4.gif),
+    url(../img/clouds_moving.gif);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    repeat-x;
+  background-position: top left, left, bottom left, top right, bottom, center;
+  background-size: 10rem, 20rem, 10rem, 25rem, 15rem, cover;
+}
+
+.try2 p {
+  text-align: center;
+  font-size: 200px;
+  color: transparent;
+  background-clip: text;
+  background-image: url(../img/clouds_moving.gif);
+  -webkit-background-clip: text;
+}
+
+.try3 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/bird_6.gif), url(../img/clouds_moving_2.gif);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, center;
+  background-size: auto, cover;
+  background-color: white;
+}
