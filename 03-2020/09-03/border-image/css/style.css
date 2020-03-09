@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+:root {
+  /*every css page needs the root*/
+  font: size 16px;
+  --color-font: rgba(23, 4, 5, 0.3);
+  --gabriela-main-text: 2px 2px;
+}
+
+.test1 {
+  border: 30px solid transparent;
+  padding: 15px;
+  border-image: url("../img/border.png") 30 30 stretch;
+}
+
+.test2 {
+  border: 30px solid transparent;
+  padding: 15px;
+  border-image: url("../img/border.png") 30 30 repeat;
+  text-align: center;
+}
+
+.test3 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url("../img/border.png") 20% round;
+  text-align: center;
+}
+
+.test4 {
+  width: 400px;
+  background-color: transparent;
+  border: 30px solid #de31ed;
+  margin: 10%;
+  padding: 10px;
+  border-image: repeating-linear-gradient(80deg, #de31ed, #3134ed, #31e2ed 50px)
+    20;
+}
+
+.test5 {
+  border: 40px solid transparent;
+  padding: 50px;
+  border-image: url("../img/borde_2.png") 20% round;
+  text-align: center;
+}
+
+.test6 {
+  border: 40px solid transparent;
+  padding: 50px;
+  border-image: url("../img/borde_2.png") 20% stretch;
+  text-align: center;
+}
+
+.test7 {
+  width: 400px;
+  background-color: transparent;
+  border: 30px solid #de31ed;
+  margin: 10%;
+  padding: 10px;
+  border-image: url(../img/birds2.gif) 20% repeat;
+}
+
+.test8 {
+  width: 400px;
+  background-color: transparent;
+  border: 30px solid #de31ed;
+  margin: 10%;
+  padding: 10px;
+  border-image: url(../img/waves.jpeg) 30% stretch;
+}
