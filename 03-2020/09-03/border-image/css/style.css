@@ -59,16 +59,16 @@
 .test7 {
   width: 400px;
   background-color: transparent;
-  border: 30px solid #de31ed;
+  border: 60px double #de31ed;
   margin: 10%;
   padding: 10px;
-  border-image: url(../img/birds2.gif) 20% repeat;
+  border-image: url(../img/birds2.gif) 25% repeat;
 }
 
 .test8 {
   width: 400px;
   background-color: transparent;
-  border: 30px solid #de31ed;
+  border: 30px outset #de31ed;
   margin: 10%;
   padding: 10px;
   border-image: url(../img/waves.jpeg) 30% stretch;
