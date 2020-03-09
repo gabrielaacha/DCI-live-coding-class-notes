@@ -1,0 +1,50 @@
+/*font link*/
+@font-face {
+  font-family: "Pacifico";
+  src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+/*font family*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+}
+
+div {
+  font-size: 20px;
+  font-family: "Pacifico", cursive;
+}
+
+/*font size*/
+.p1 {
+  font-size: 2em; /*would multiply the number by the parent element*/
+  font-style: initial; /*initial from the root*/
+  color: blue;
+  font-weight: 900;
+  /* font: italic 2rem "Arial"; --> here you combine all features in one */
+}
+
+.p2 {
+  font-size: x-small;
+  font-style: inherit;
+  color: darkorange;
+}
+
+.p3 {
+  font-size: 2em; /*do not use cm, mm or inch!!*/
+  font-style: oblique 10deg; /*you can tilt it with oblique*/
+  color: darkmagenta; /*inherit from the parent element and initial from the root*/
+}
+
+/*line-height*/
+/* css will calculate the px in between the lines */
+.p3 {
+  line-height: 5rem;
+  text-align: center;
+}
