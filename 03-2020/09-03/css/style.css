@@ -19,7 +19,7 @@
   font-size: 16px;
 }
 
-h1 {
+.head-one {
   font-family: "Pacifico", cursive;
   color: var(--color-font);
   padding: var(--gabriela-main-text);
@@ -113,13 +113,34 @@ div {
 }
 
 .p10 {
+  /* word-break --> break in between words */
   /* word-break: break-all; */
   word-break: keep-all;
   text-indent: 3rem; /* the first letter will go 48px to the right*/
   word-spacing: 5rem;
 }
 
+/*exercise*/
+
 .p11 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+.important-dates {
+  font-weight: bold;
+}
+
+.wiki {
+  font-style: italic;
+}
+
+.date1 {
+  font-weight: bold;
 }
 
 .p12 {
@@ -129,4 +150,10 @@ div {
 }
 
 .p14 {
+}
+
+/*icon*/
+
+i {
+  color: hotpink;
 }
