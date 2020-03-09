@@ -23,6 +23,9 @@ h1 {
   font-family: "Pacifico", cursive;
   color: var(--color-font);
   padding: var(--gabriela-main-text);
+  direction: rtl;
+  /*text-shadow*/
+  text-shadow: 2px 2px 2px orange, 3px 3px 3px pink;
 }
 
 div {
@@ -37,6 +40,7 @@ div {
   color: blue;
   font-weight: 900;
   /* font: italic 2rem "Arial"; --> here you combine all features in one */
+  text-shadow: 2px 2px 2px orange, 3px 3px 3px pink;
 }
 
 .p2 {
@@ -62,6 +66,9 @@ div {
   line-height: 3rem;
   font-style: oblique;
   text-align: right;
+  /*text transform*/
+  text-transform: uppercase;
+  direction: rtl;
 }
 
 .p5 {
@@ -99,9 +106,17 @@ div {
 }
 
 .p9 {
+  /*writing-mode*/
+  writing-mode: vertical-lr;
+  /*text-orientation*/
+  text-orientation: upright;
 }
 
 .p10 {
+  /* word-break: break-all; */
+  word-break: keep-all;
+  text-indent: 3rem; /* the first letter will go 48px to the right*/
+  word-spacing: 5rem;
 }
 
 .p11 {
