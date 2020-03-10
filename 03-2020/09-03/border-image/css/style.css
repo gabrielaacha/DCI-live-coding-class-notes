@@ -5,17 +5,11 @@
   font-size: 16px;
 }
 
-:root {
-  /*every css page needs the root*/
-  font: size 16px;
-  --color-font: rgba(23, 4, 5, 0.3);
-  --gabriela-main-text: 2px 2px;
-}
-
 .test1 {
   border: 30px solid transparent;
   padding: 15px;
   border-image: url("../img/border.png") 30 30 stretch;
+  text-align: center;
 }
 
 .test2 {
@@ -33,13 +27,13 @@
 }
 
 .test4 {
-  width: 400px;
+  width: 300px;
   background-color: transparent;
   border: 30px solid #de31ed;
   margin: 10%;
   padding: 10px;
-  border-image: repeating-linear-gradient(80deg, #de31ed, #3134ed, #31e2ed 50px)
-    20;
+  border-image: repeating-linear-gradient(30deg, #de31ed, #31e2ed 80px) 40;
+  text-align: center;
 }
 
 .test5 {
@@ -71,5 +65,5 @@
   border: 30px outset #de31ed;
   margin: 10%;
   padding: 10px;
-  border-image: url(../img/waves.jpeg) 30% stretch;
+  border-image: url(../img/waves.jpeg) 10% stretch;
 }

@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.mom {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-flow: wrap column-reverse;
+  align-items: center;
+}
+
+.surf-1 {
+  background-image: url(../img/surf-girl-1.jpg);
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  border: black solid 2px;
+  display: block;
+  opacity: 50%;
+  position: relative;
+  align-self: baseline;
+  z-index: 5;
+}
+
+.surf-2 {
+  background-image: url(../img/surf-girl-2.jpeg);
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  border: black solid 2px;
+  padding: 30px;
+  opacity: 50%;
+  position: relative;
+  align-self: center;
+  z-index: 5;
+}
+
+.surf-3 {
+  background-image: url(../img/surf-girl-3.jpg);
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border: black solid 2px;
+  opacity: 50%;
+  position: relative;
+  align-self: flex-end;
+  z-index: 1;
+}
+
+.surf-1:hover {
+  transform: rotate(45deg);
+}
+
+.surf-2:hover {
+  transform: rotate(45deg);
+}
+
+.surf-3:hover {
+  transform: rotate(45deg);
+}
