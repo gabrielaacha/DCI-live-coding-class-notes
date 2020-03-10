@@ -1,0 +1,73 @@
+/*flex direction*/
+
+.daddy {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row; /*there is also column, row...*/
+  /* justify-content: space-evenly; end, start, etc... */
+  align-items: baseline; /*baseline (will align elements in the same line), etc...*/
+  flex-wrap: wrap; /*with nowrap they live in the same line, because I have row at flex-direction*/
+  /* align-content: center; */
+  flex-flow: wrap column-reverse; /*flex direction and flex wrap combined with flex flow*/
+  /*column-reverse wrap is another option*/
+}
+
+.baby1 {
+  background-color: lawngreen;
+  width: 250px;
+  height: 250px;
+  align-self: flex-end;
+  order: 4;
+  flex: 3;
+  /* flex-grow: ;
+  flex-shrink: ;
+  flex-basis: ; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.baby2 {
+  background-color: lightcoral;
+  width: 250px;
+  height: 250px;
+  order: 2;
+  flex: 1 1 22%;
+}
+
+.baby3 {
+  background-color: lightseagreen;
+  width: 250px;
+  height: 250px;
+  order: 3;
+  flex: 1;
+}
+
+.baby4 {
+  background-color: mediumorchid;
+  width: 250px;
+  height: 250px;
+  order: 1;
+  flex: 1;
+}
+
+.page-layout {
+  width: 100vw;
+  height: 100 vh;
+  display: flex;
+}
+
+nav {
+  width: 25%;
+}
+
+.main {
+  display: flex;
+  background-color: hotpink;
+  flex-direction: column-reverse;
+}
+
+section {
+  border: 2px solid black;
+}
