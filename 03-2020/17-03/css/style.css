@@ -1,0 +1,48 @@
+* {
+
+    margin: 0;
+    padding:0;
+
+}
+
+:root {
+   background-color: gray;
+   font-size: 16px; 
+}
+
+
+.main {
+    height:50vh;
+   width: 50vw;
+   border:3px;
+   margin: 0 auto;
+
+
+
+/*relative*/
+}
+.text {
+
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    
+}
+
+.text.long{
+background-color: hotpink;
+position: absolute;
+left: 0;
+}
+
+.text.like {
+    background-color: red;
+    font-size: 2.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5rem;
+    left: 5 rem;
+
+}
