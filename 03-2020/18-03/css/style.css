@@ -1,0 +1,125 @@
+* {
+margin: 0;
+padding:0;
+box-sizing: border-box;
+
+}
+
+:root {
+    font-size: 16px;
+    /*create some variables*/
+    --box-width: 3rem; 
+    --box-color: yellow;
+
+}
+
+body {
+    display: flex;
+}
+
+/*style the box*/
+/* -- is tehe way to declare variables in css*/
+.box{
+    width: var(--box-width);
+    height: 2rem;
+    font-size: 2.5em;
+    color: var(--box-color);
+    position: relative; /*this is needed to use the keyframes*/
+    animation-name: move-down; /*name of the animation*/
+    animation-duration: 3s;
+    animation-timing-function: linear;;
+    animation-delay: 1s;
+    animation-iteration-count: infinite; /*how many times this will happen*/
+     /* animation-direction:  alternate-reverse; */
+     animation-direction: alternate-reverse;
+     animation-fill-mode: forwards;
+     /* animation-play-state: paused; */
+     /* animation time duration timing-function 
+     delay iteration-count duration fill-mode */
+     /*the order is very important, don't change the order!!*/
+   
+}
+
+/*animations--keyframes*/
+@keyframes move-down /*name of the animation needed to bind it with the previous actions*/ {
+    /*determine something to move from point a to point b*/
+from /*first behaviour for the animation cycle*/ {
+   top:0;
+   color: lawngreen;
+   background-color: blueviolet;
+}
+to {
+    top: 150px;
+    color: blue;
+    background-color: darkgoldenrod;
+
+}
+}
+
+/*check animation timing function in mdn*/
+
+.size-change {
+     width: var(--box-width);
+     height: 2em;
+     border: 3px solid black;
+     position: relative;
+     animation-name: re-size;
+     animation-duration: 5s;
+     animation-iteration-count: infinite;
+     
+}
+
+
+@keyframes re-size /*working with precentages instead of from to*/ {
+    0% {
+    width: calc(var(--box-width) * 1.5);
+    background-color: lawngreen;
+    }
+
+    25% {
+        width: calc(var(--box-width) * 1.5);
+        background-color: lawngreen;
+    }
+    50% {
+        width: calc(var(--box-width) * 2.5);
+        background-color: greenyellow;
+    }
+
+    100% {
+        width: calc(var(--box-width) * 3.5);
+        background-color: green;
+    }
+}
+
+.box-up {
+   width: var(--box-width);
+   font-size: var(--box-width);
+   position:relative;
+   animation-name: up;
+   animation-iteration-count: infinite;
+   animation-duration: 3s;
+   animation-direction: alternate;
+}
+
+.x-menu{
+    background-color: lightgray;
+    width: 4rem;
+    height: 3.5rem;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: -1;
+
+}
+.line{
+  width: 3rem;
+  height: 0.4rem;
+  background-color: grey;  
+  border-radius: 20%;
+}
+
+.line one{}
+
+.line sec {}
+
+/* assigment: */
