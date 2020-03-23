@@ -13,6 +13,7 @@
 
 body {
   display: flex;
+  background-color: teal;
 }
 
 /*style the box*/

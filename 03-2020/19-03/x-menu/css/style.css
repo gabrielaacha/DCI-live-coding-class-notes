@@ -9,25 +9,32 @@
   --box-width: 3rem;
   --box-color: yellow;
 }
-/* 
+
 body {
+  background-color: teal;
+}
+
+.main-container {
   display: flex;
-} */
+  justify-content: center;
+  /* align-items: baseline; */
+}
 
 .x-menu {
-  background-color: green;
-  width: 4rem;
-  height: 3.5rem;
+  margin: 1rem;
+  border: 1px tomato solid;
+  width: 10rem;
+  height: 10rem;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  position: relative;
-  animation-name: x-men;
+  align-items: center; /*align items inside the box*/
+  justify-content: space-evenly; /*separating the lines evenly*/
+  flex-direction: column; /*this is positioning the two lines in the middle*/
+  /* position: relative; */
+
+  /* animation-name: x-men;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
-  /* background-color: lightgray;
-  width: 4rem;
+  animation-iteration-count: infinite; */
+  /* width: 4rem;
   height: 3.5rem;
   display: flex;
   justify-content: space-evenly;
@@ -39,19 +46,14 @@ body {
 }
 
 .x-menu:hover {
-  background-color: red;
-  z-index: -1;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-name: x-men;
-  animation-duration: 5s;
+  border: 1px tomato solid;
 }
 
 .line-one,
 .line-sec {
-  width: 3rem;
-  height: 0.4rem;
-  background-color: yellow;
+  width: 5.5rem;
+  height: 1.5rem;
+  background-color: tomato;
   animation-name: x-men;
   border-radius: 20%;
   animation-duration: 2s;
@@ -59,21 +61,21 @@ body {
 }
 
 .x-menu:hover .line-one {
-  width: 3rem;
-  height: 0.4rem;
+  width: 6.5rem;
+  height: 2.5rem;
   border-radius: 20%;
   animation-name: x-men;
-  transform: skew(20deg, 30deg);
+  transform: skew(30deg, 40deg);
   position: absolute;
   animation-duration: 5s;
 }
 
 .x-menu:hover .line-sec {
-  width: 3rem;
-  height: 0.4rem;
+  width: 6.5rem;
+  height: 2.5rem;
   border-radius: 20%;
   animation-name: x-men;
-  transform: skew(-20deg, -30deg);
+  transform: skew(-30deg, -40deg);
   position: absolute;
   animation-duration: 5s;
 }
@@ -118,20 +120,3 @@ body {
     animation-iteration-count: infinite;
   }
 } */
-
-/* assignment: */
-/* Today’s assignment is  X-menu so the 
-  lines that we have done looks like = when the 
-  user hover over it your lines should move around 
-  to look like X */
-
-/* 
-  #menuToggle input:checked ~ div .x-left {
-      transform: skew(20deg, 30deg);
-      position: absolute;
-    }
-    
-    #menuToggle input:checked ~ div .x-right {
-      transform: skew(-20deg, -30deg);
-      position: absolute;
-    } */

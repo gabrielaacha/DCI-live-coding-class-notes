@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*overflow*/
+
+p {
+  width: 3em;
+  height: 3em;
+  background-color: lightcoral;
+  overflow: scroll; /*only the content in the box will be shown and only what is behind the space of the box*/
+  /*visible, hidden, scroll, etc--> the most usual is scroll*/
+  white-space: normal;
+  overflow-wrap: normal;
+}
+
+.main {
+  width: 75vw;
+  height: 50vh;
+  background-color: lightskyblue;
+}
+
+.box {
+  background-color: lime;
+  width: 50%;
+  height: 100%;
+}
+
+/*clip-path*/
+
+.test {
+  clip-path: polygon(
+    40% 0%,
+    40% 20%,
+    100% 20%,
+    100% 80%,
+    40% 80%,
+    40% 100%,
+    0% 50%
+  );
+
+  /* background: red; */
+  background-image: url(../img/waves.jpg);
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.test2 {
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background-image: url(../img/waves.jpg);
+  width: 200px;
+  height: 200px;
+}
+
+.clip.me {
+  position: absolute; /* absolute or fixed positioning required */
+  clip: rect(110px, 160px, 170px, 60px);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/*100% of the parent*/
+
+/*use more header and footer*/
+
+/*image vs. background-image*/
+/*if it has to be available as content better as image, if its just a background, styling, then better background*/
+
+/*https://blog.px-lab.com/html-img-tag-vs-css-background-image*/
+
+/*clip-path*/
