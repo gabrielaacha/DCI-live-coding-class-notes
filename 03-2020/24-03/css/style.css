@@ -1,0 +1,32 @@
+/*click me btn*/
+
+#click {
+    padding: 3rem;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 5%;
+    background-color: lightgrey;
+    border: none;
+}
+
+#click:hover {
+    box-shadow:  0 12px 12px 0 olivedrab;
+    cursor: progress;
+    color: white;
+}
+
+#click:hover ::after {
+    content: "\00bb";
+}
+
+#box {
+    background-color: ;
+
+}
+
+.cool{
+    background-color: violet;
+    width: 5rem;
+    height: 5rem;
+    
+}

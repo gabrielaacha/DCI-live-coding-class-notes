@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/background/photo-1492138623748-a1b1f758a762.webp);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu1 .menu-btn {
+    display: none;
+  }
+
+  
+.menu-outer {
+  border: 1px red solid;
+  text-align: center;
+  justify-content: center;
+}
+
+.menu1 li {
+  display: inline-flex;
+  flex-direction: row;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color:blue;
+}
+
+.menu1 {
+  border: 1px yellow solid;
+}
+
+
+.main-nav-item:hover {
+    box-shadow: 0 12px 12px 0 gainsboro;
+    cursor: progress;
+    color: white;
+
+}
+
+
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+    .button1 {
+      /* color: red; */
+    }
+  
+    body {
+      background-image: url(../img/background/photo-1492138623748-a1b1f758a762.webp);
+      background-size: auto;
+      background-repeat: no-repeat;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu1 .menu-icon {
+        /*only affecting the hamb. menu icon*/
+        cursor: pointer;
+        display: inline-block;
+        padding: 30px 20px;
+        display: flex; /*hamburger menu placement */
+    }    
+
+    .menu1 .menu-icon .navicon {
+        background: #333;
+        display: block;
+        height: 2px; /*cross size*/
+        position: relative; /*cross position*/
+        /* transition: background 0.2s ease-out; */
+        width: 18px; /*cross size*/
+      }
+    
+      .menu1 .menu-icon .navicon:before,
+      .menu1 .menu-icon .navicon:after {
+        background: #333;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+        width: 100%;
+      }
+    
+      .menu1 .menu-icon .navicon:before {
+        top: 5px; /*position of the hamb. menu lines in relation to one another*/
+      }
+    
+      .menu1 .menu-icon .navicon:after {
+        top: -5px; /*position of the hamb. menu lines in relation to one another*/
+      }
+    
+      /*----- menu btn (triggers opening and closing of hamb. menu) -----*/
+      /* .menu1 .menu-btn {
+        display: none;
+      } */
+    
+      /*area with the*/
+      .menu1 .menu-btn:checked ~ .menu-outer .menu,
+      .menu1 .menu-btn:checked ~ .menu-outer .hq-nav {
+        /* max-height: 100%; */
+        background-color: orangered;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .menu-outer .main-nav-item {
+        color: green;
+        display: flex;
+        justify-content: center;
+      }
+    
+      .menu1 .menu-btn:checked ~ .menu-outer {
+        max-height: 75vh;
+        /* box-shadow: 0px 2px 4px 0 rgba(30, 31, 33, 0.5); */
+      }
+    
+      .menu-outer {
+        clear: both; /*no idea*/
+        overflow-x: auto; /*makes space when the menu opens so it does not overlap*/
+        max-height: 0;
+      }
+    
+      .menu1 .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+      }
+    
+      .menu1 .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+        /*this is creating the x*/
+      }
+    
+      .menu1 .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+      } /*this is creating the x*/
+    
+      .menu1 .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+      .menu1 .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+      }
+    

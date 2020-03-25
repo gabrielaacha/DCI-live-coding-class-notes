@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: darkgrey;
+  width: 20vw;
+  height: 50vh;
+  margin: 0;
+  transition: 4s;
+  transition-delay: 1s;
+  animation-name: crazy;
+  border-radius: 2%;
+}
+
+@keyframe crazy {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li {
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li:hover {
+  background-color: white;
+}
+
+ul li a:hover {
+  background-color: grey;
+}
+
+button {
+  background-color: darkorange;
+  font-size: 3em;
+  border: none;
+}
+
+button:hover {
+  background-color: orange;
+  cursor: pointer;
+}

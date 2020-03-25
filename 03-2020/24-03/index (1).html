@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>The perfect menu</title>
+</head>
+<body>
+   <script>console.log("Hi");</script> 
+   <button id="click" 
+   onclick="this.style.color='red'; this.style.fontSize='60px';">
+     <span>click me</span>  
+    </button>
+    <button id="shBtn" onclick="hideShow()">Hid/Show</button>
+<script>
+    function hideSHow()
+{
+    console.log("hi, I am a function");
+    // box.style.display="none";
+    if (box.style.display == "none"){
+        box.style.display = "block";
+    } else {
+        box.style.display = "none";
+    }
+
+}
+</script>
+<button id="color"> Hi, it's me </button>
+<script>
+    color.onclick = function() {
+        console.log("Hi, I am a function");
+        this.style.backgroundColor = "red";
+        this.style.fontSize = "4rem";
+    };
+</script>
+
+<button onClick="box2.classList.add('cool')">show me</button>
+<div id="box2"></div>
+
+
+</body>
+</html>

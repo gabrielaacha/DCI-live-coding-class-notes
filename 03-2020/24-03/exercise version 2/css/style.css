@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/background/photo-1492138623748-a1b1f758a762.webp);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu1 .menu-btn {
+    display: none;
+  }
+
+
+.menu-outer {
+  border: 1px red solid;
+  text-align: center;
+  justify-content: center;
+  display:block;
+}
+
+.menu1 li {
+  display: inline-flex;
+  flex-direction: row;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color:blue;
+}
+
+.menu1 {
+  border: 1px yellow solid;
+}
+
+
+.main-nav-item:hover {
+    box-shadow: 0 12px 12px 0 gainsboro;
+    cursor: progress;
+    color: white;
+
+}
+
+
+
+/*---------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+    .button1 {
+      /* color: red; */
+    }
+  
+    body {
+      background-image: url(../img/background/photo-1492138623748-a1b1f758a762.webp);
+      background-size: auto;
+      background-repeat: no-repeat;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu1 {
+      display: none;
+      border: 1px yellow solid;
+    }
+
+    /*---------------------------------------------------*/
+    @media only screen and (min-width: 400px) {
+      #shBtn  {
+        display: none;
+      }
+      
+#box {
+  background-color: tomato;
+  width: 9em;
+  height: 15rem;
+}
+
+#shBtn #hamb {
+  display: block;
+  color: red;
+  text-decoration: none;
+  
+    }
+    
+  #box {
+    background-color: tomato;
+    width: 9em;
+    height: 15rem;
+  }
