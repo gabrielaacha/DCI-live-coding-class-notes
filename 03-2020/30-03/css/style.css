@@ -1,0 +1,30 @@
+/* why? */
+
+/* what is it? */
+/* twitter framework; they built bootstrap
+twitter  made it for mobile first applications and web
+applications;  */
+
+/* are there any other options? */
+/* Foundation, Bulma, Pure and more than 20 others*/
+
+/* what is better to use? */
+/* */
+
+/* how to use it? */
+
+div {
+    /* width: 3rem;
+    height: 3rem; */
+    border: 3px solid black;;
+}
+
+.red {
+   background-color: red;
+}
+
+.pink {
+    background-color: pink;
+}
+
+/* */
