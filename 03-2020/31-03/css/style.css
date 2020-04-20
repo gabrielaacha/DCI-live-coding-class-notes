@@ -10,3 +10,13 @@
 /*should I work with it?*/
 
 /*which version are we using?*/
+
+div {
+  border: 2px solid black;
+}
+#box1 {
+  background-color: pink;
+}
+.fas {
+  font-size: 5rem;
+}
