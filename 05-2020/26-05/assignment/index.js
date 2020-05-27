@@ -17,6 +17,8 @@ function avg(numArray) {
 
 const [operation, ...rest] = args;
 const numbers = rest.map(parseNum);
+sum 3 5 6 kdfjb
+avg 45 6 67
 
 switch (operation) {
   case "sum":
