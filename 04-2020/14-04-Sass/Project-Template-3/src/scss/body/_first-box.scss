@@ -1,0 +1,8 @@
+body {
+  background-color: color(cool);
+  #box {
+    width: 30px;
+    height: $box-size;
+    background-color: $box-color;
+  }
+}

@@ -1,0 +1,10 @@
+# when i start with . it means the file is hidden
+
+dist/
+
+src/styles/
+
+node_modules/
+
+
+
