@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "1 like water"
+    },
+    {
+      "id": "2",
+      "title": "1 want to sleep"
+    },
+    {},
+    {},
+    {
+      "id": "1",
+      "title": "string"
+    }
+  ],
+  "user": {
+    "name": "Errazti"
+  },
+  "num": 8
+}
