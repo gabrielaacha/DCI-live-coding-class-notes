@@ -1,4 +1,4 @@
-# DCI live-coding class notes sorted by date
+# DCI live-coding class notes sorted by date :date:
 
 ## 01.2020
 
