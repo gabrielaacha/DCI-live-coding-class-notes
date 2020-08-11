@@ -1,12 +1,10 @@
-# DCI-live-coding-class-notes
-CDI class coding notes sorted by date
+# DCI live-coding class notes sorted by date
 
 ## 01.2020
 
-
 ## 02.2020
 
- -[js-closure-self-invoked-SIAF](https://github.com/gabrielaacha/DCI-live-coding-class-notes/blob/master/02-2020/03-02-js-closure-self-invoked-SIAF/index.js)
+ - [js-closure-self-invoked-SIAF](https://github.com/gabrielaacha/DCI-live-coding-class-notes/blob/master/02-2020/03-02-js-closure-self-invoked-SIAF/index.js)
 - [js-objects](https://github.com/gabrielaacha/DCI-live-coding-class-notes/blob/master/02-2020/04-02-js-objects/index.js)
 - [js-objects-recap](https://github.com/gabrielaacha/DCI-live-coding-class-notes/blob/master/02-2020/05-02-js-objects-recap/index.js)
 - [js-guest-teacher](https://github.com/gabrielaacha/DCI-live-coding-class-notes/blob/master/02-2020/06-02-js-guest-teacher/index.js)
