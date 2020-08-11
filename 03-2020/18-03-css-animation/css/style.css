@@ -17,7 +17,7 @@ body {
 }
 
 /*style the box*/
-/* -- is tehe way to declare variables in css*/
+/* -- is the way to declare variables in css*/
 .box {
   width: var(--box-width);
   height: 2rem;
